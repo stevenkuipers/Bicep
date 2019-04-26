@@ -1,0 +1,45 @@
+table, .table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: var(--margin-m);
+
+  &-alternate {
+    & tbody tr:nth-child(odd){
+      background-color: var(--color-primary);
+      color: var(--color-accent1);
+    }
+    & thead th, tfoot th {
+      border: none;
+    }
+  }
+}
+
+// Extra border underneath header
+thead th {
+  font-weight: 400;
+  padding: .5rem;
+  border-bottom: 2px solid var(--color-accent2);
+}
+
+// Extra border above footer
+tfoot th {
+  font-weight: 400;
+  padding: .5rem;
+  border-top: 2px solid var(--color-accent2);
+}
+
+td {
+  border-bottom: 1px solid var(--color-accent2);
+  padding: var(--padding-m) var(--padding-s);
+}
+
+th {
+  padding: 0 var(--padding-s);
+}
+
+th,
+td {
+  text-align: left;
+}

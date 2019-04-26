@@ -1,0 +1,20 @@
+{
+  "name": "css-scaffolding",
+  "version": "1.0.0",
+  "description": "A scaffold for a quick CSS framework setup",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "node-sass sass/main.scss public/css/main.css"
+  },
+  "keywords": [
+    "CSS",
+    "scaffolding",
+    "setup"
+  ],
+  "author": "Steven Kuipers",
+  "license": "ISC"
+}

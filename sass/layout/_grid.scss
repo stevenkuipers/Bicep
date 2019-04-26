@@ -1,0 +1,37 @@
+p, ol, ul, dl {
+  margin: 0 0 $margin-s 0;
+}
+
+%container {
+  margin: auto;
+  padding: $padding-m;
+}
+
+.container {
+  overflow-x: auto;
+  @extend %container;
+  margin-bottom: $margin-m;
+  padding: 0;
+
+  &-small {
+    max-width: $small;
+    @extend %container;
+  }
+  &-medium {
+    max-width: $medium;
+    @extend %container;
+  }
+  &-large {
+    max-width: $large;
+    @extend %container;
+  }
+
+  &-space-between {
+    @extend %container;
+    padding: $padding-m;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

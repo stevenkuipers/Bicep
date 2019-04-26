@@ -1,0 +1,105 @@
+// $color-white : hsl(0,0,100%) !default;        // #FFFFFF
+// $color-primary: hsl(168,64%,43%) !default;    // #28B498
+// $color-primary-dark: hsl(168,64%,38%) !default;
+// $color-accent1: hsl(163, 26%, 95%) !default;  // #EEF5F3
+// $color-accent2: hsl(160, 18%, 90%) !default;  // #E1EAE7
+// $color-accent3: hsl(165, 3%, 55%) !default;   // #88908E
+// $color-accent4: hsl(173, 20%, 17%) !default;  // #223331
+
+// Color Declarations
+$color-white : #FFFFFF !default;
+$color-primary: #28B498 !default;
+$color-primary-dark: darken(#28B498, 5%) !default;
+$color-accent1: #EEF5F3 !default;
+$color-accent2: #E1EAE7 !default;
+$color-accent3: #88908E !default;
+$color-accent4: #223331 !default;
+
+$colors: (
+  color-white : $color-white,
+  color-primary: $color-primary,
+  color-primary-dark: $color-primary-dark,
+  color-accent1: $color-accent1,
+  color-accent2: $color-accent2,
+  color-accent3: $color-accent3,
+  color-accent4: $color-accent4
+);
+
+// Font Declarations
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
+
+$font-size: 1.6rem;
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Raleway', sans-serif;
+
+$fonts: (
+  font-size: $font-size,
+  font-primary: $font-primary,
+  font-secondary: $font-secondary
+);
+
+// Container Declarations
+$small: 55rem;
+$medium: 75rem;
+$large: 100rem;
+
+$container-sizes: (
+  small: $small,
+  medium: $medium,
+  large: $large
+);
+
+// Headings styling and font sizes
+$heading-font-color: $color-accent4;
+$heading-font-weight: 300;
+$heading-font-family: $font-secondary;
+$heading-line-height: 1.6;
+$h1: 2.5em;
+$h2: 2em;
+$h3: 1.75em;
+$h4: 1.5em;
+$h5: 1em;
+
+$headings: (
+  heading-font-color: $heading-font-color,
+  heading-font-weight: $heading-font-weight,
+  heading-font-family: $heading-font-family,
+  heading-line-height: $heading-line-height,
+  h1: $h1,
+  h2: $h2,
+  h3: $h3,
+  h4: $h4,
+  h5: $h5
+);
+
+// Layout & Spacing Declarations
+$padding-s: .8rem;
+$padding-m: 1.6rem;
+$padding-l: 2.4rem;
+$margin-s: 2rem;
+$margin-m: 4rem;
+$margin-l: 8rem;
+
+$spacings: (
+  padding-s: $padding-s,
+  padding-m: $padding-m,
+  padding-l: $padding-l,
+  margin-s: $margin-s,
+  margin-m: $margin-m,
+  margin-l: $margin-l
+);
+
+// Border Declarations
+$border: 1px solid $color-accent2;
+$border-radius: 4px;
+
+$borders: (
+border: $border,
+border-radius: $border-radius
+);
+
+// Breakpoints Declarations - Are not used anywhere yet
+// $mobile: $small;
+// $tablet: $medium;
+// $desktop: $large;

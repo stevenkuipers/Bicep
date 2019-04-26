@@ -1,0 +1,34 @@
+:root {
+
+  // All SCSS variables are converted to CSS variables, mapping the new name to the SCSS name
+  // for easy conversion.
+
+  // loop over each name, color in color map
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+  // loop over each name, font in font map
+  @each $name, $font in $fonts {
+    --#{$name}: #{$font};
+  }
+
+  // loop over each name, size in container map
+  @each $name, $size in $container-sizes {
+    --#{$name}: #{$size};
+  }
+
+  // loop over each name, heading in headings map
+  @each $name, $heading in $headings {
+    --#{$name}: #{$heading};
+  }
+
+  // loop over each name, spacing in spacings map
+  @each $name, $spacing in $spacings {
+    --#{$name}: #{$spacing};
+  }
+
+  // loop over each name, border in borders map
+  @each $name, $border in $borders {
+    --#{$name}: #{$border};
+  }
+}

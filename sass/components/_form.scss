@@ -1,0 +1,64 @@
+form {
+  margin-bottom: var(--margin-m);
+
+  & > * {
+    margin-bottom: var(--margin-s);
+  }
+  
+  & label {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+
+    & > input[type="checkbox"], input[type="radio"]{
+      margin-right: 6px;
+      display: inline-block;
+      margin-bottom: var(--margin-s);
+    }
+  }
+
+  & [type=color], [type=date], [type=datetime],
+    [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
+    border: 1px solid $color-accent2;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: var(--padding-s);
+    border-radius: var(--border-radius);
+    background: transparent;
+    height: calc(var(--font-size) * 2.5);
+    line-height: 1;
+    font-weight: 300;
+    color: var(--color-accent4);
+  }
+
+  & textarea {
+    padding-top: var(--padding-s);
+    height: unset;
+  }
+
+  & select, input::placeholder, textarea::placeholder {
+    font-weight: 300;
+    color: var(--color-accent4);
+  }
+
+  & > fieldset {
+    margin: 0 0 var(--margin-s) 0;
+  }
+}
+
+fieldset {
+  display: block;
+  margin: 0 0 var(--margin-m) 0;
+  padding: var(--padding-l) var(--padding-m) var(--padding-m) var(--padding-m);
+  border: 1px solid var(--color-accent2);
+  border-radius: var(--border-radius);
+}
+
+legend {
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  white-space: normal;
+  padding: 0 5px;
+}

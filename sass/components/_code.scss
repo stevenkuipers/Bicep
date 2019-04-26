@@ -1,0 +1,33 @@
+%code {
+  display: inline-block;
+  background-color: var(--color-accent4);
+
+  padding: 0 3px;
+  border-radius: var(--border-radius);
+}
+
+code, xmp {
+  @extend %code;
+  font-family: monospace, monospace;
+  color: var(--color-primary);
+}
+
+kbd, samp {
+  @extend %code;
+  color: var(--color-accent1);
+}
+
+pre {
+  display: block;
+  background-color: var(--color-accent4);
+  color: var(--color-primary);
+  padding: var(--padding-m);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--margin-m);
+  overflow: auto;
+
+  & code, xmp {
+    display: inline;
+    padding: 0;
+  }
+}

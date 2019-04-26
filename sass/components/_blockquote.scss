@@ -1,0 +1,18 @@
+blockquote {
+  background: var(--color-accent1);
+  border-left: 1rem solid var(--color-primary);
+  text-align: left;
+  margin: 0 0 var(--margin-m) 0;
+  padding: var(--padding-m);
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  font-weight: 400;
+
+  & > cite {
+    margin-top: 1rem;
+    font-weight: 300;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  font-size: var(--font-size);
+  line-height: 1.2;
+  font-weight: 200;
+  font-family: var(--font-primary);
+  color: var(--color-accent4);
+}
+
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+%heading {
+  color: var(--heading-font-color);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font-family);
+  line-height: var(--heading-line-height);
+  margin: 0 0 .5em 0;
+}
+
+.heading-1, h1 {
+  @extend %heading;
+  font-size: var(--h1);
+}
+.heading-2, h2 {
+  @extend %heading;
+  font-size: var(--h2);
+}
+.heading-3, h3 {
+  @extend %heading;
+  font-size: var(--h3);
+}
+.heading-4, h4 {
+  @extend %heading;
+  font-size: var(--h4);
+}
+.heading-5, h5 {
+  @extend %heading;
+  font-size: var(--h5);
+}
+
+a:not(.button){
+  color: var(--color-primary);
+  font-family: inherit;
+  text-decoration: none;
+  transition: color .3s ease-out;
+
+  &:hover {
+  color: darken($color-accent4, 5%);
+  }
+  &:active {
+  color: $color-accent4;
+  }
+}
