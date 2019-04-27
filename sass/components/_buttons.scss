@@ -26,7 +26,7 @@
 }
 
 .button {
-  &-inverted {
+  &-inverted, &-inverted:visited {
     background-color: var(--color-accent1);
     color: var(--color-primary);
 
@@ -37,7 +37,7 @@
       text-decoration: none;
     }
   }
-  &-muted {
+  &-muted, &-muted:visited {
     background-color: var(--color-white);
     color: var(--color-accent4);
     border: 1px solid currentColor;
