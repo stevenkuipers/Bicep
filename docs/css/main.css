@@ -411,20 +411,20 @@ a:not(.button) {
     transition: all .3s ease-out;
     background-color: var(--color-primary-dark); }
 
-.button-inverted {
+.button-inverted, .button-inverted:visited {
   background-color: var(--color-accent1);
   color: var(--color-primary); }
-  .button-inverted:hover {
+  .button-inverted:hover, .button-inverted:visited:hover {
     transition: all .3s ease-out;
     background-color: var(--color-primary-dark);
     color: var(--color-accent1);
     text-decoration: none; }
 
-.button-muted {
+.button-muted, .button-muted:visited {
   background-color: var(--color-white);
   color: var(--color-accent4);
   border: 1px solid currentColor; }
-  .button-muted:hover {
+  .button-muted:hover, .button-muted:visited:hover {
     transition: all .3s ease-out;
     border-color: var(--color-primary-dark);
     background-color: var(--color-white);
