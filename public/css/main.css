@@ -567,20 +567,20 @@ p, ol, ul, dl {
 
 .container, .container-small, .container-medium, .container-large, .container-space-between {
   margin: auto;
-  padding: 1.6rem; }
+  padding: var(--padding-m); }
 
 .container {
   overflow-x: auto;
   margin-bottom: 4rem;
   padding: 0; }
   .container-small {
-    max-width: 55rem; }
+    max-width: var(--small); }
   .container-medium {
-    max-width: 75rem; }
+    max-width: var(--medium); }
   .container-large {
-    max-width: 100rem; }
+    max-width: var(--large); }
   .container-space-between {
-    padding: 1.6rem;
+    padding: var(--padding-m);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

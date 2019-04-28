@@ -4,7 +4,7 @@ p, ol, ul, dl {
 
 %container {
   margin: auto;
-  padding: $padding-m;
+  padding: var(--padding-m);
 }
 
 .container {
@@ -14,21 +14,21 @@ p, ol, ul, dl {
   padding: 0;
 
   &-small {
-    max-width: $small;
+    max-width: var(--small);
     @extend %container;
   }
   &-medium {
-    max-width: $medium;
+    max-width: var(--medium);
     @extend %container;
   }
   &-large {
-    max-width: $large;
+    max-width: var(--large);
     @extend %container;
   }
 
   &-space-between {
     @extend %container;
-    padding: $padding-m;
+    padding: var(--padding-m);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

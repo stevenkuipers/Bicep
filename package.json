@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build-css": "node-sass sass/main.scss public/css/main.css"
+    "build-css": "node-sass sass/main.scss public/css/main.css && node-sass sass/main.scss docs/css/main.css"
   },
   "keywords": [
     "CSS",
