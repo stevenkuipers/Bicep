@@ -511,7 +511,7 @@ pre {
 form {
   margin-bottom: var(--margin-m); }
   form > * {
-    margin-bottom: var(--margin-s); }
+    margin-bottom: 1em; }
   form label {
     display: block;
     margin-bottom: 1rem;

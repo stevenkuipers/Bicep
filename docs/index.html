@@ -48,11 +48,11 @@
     <!-- <h2>Another CSS boilerplate?</h2>
     <p>Yup, I know there are others out there and I use and like a lot of them. I've used <a href="http://getskeleton.com">skeleton</a> and like the font choice ✨, <a href="https://getbootstrap.com">bootstrap</a> is great for bigger projects.</p> -->
     <h2>Sizing</h2>
-    <p>Sizing is mainly done thru REM's. Root font-size is set to 62.5%. All major browers have a default font-size setting of 16px. By setting it to 62.5% we basicly set font-size to 10px. This makes doing REM calculations really easy because 1rem
-      now equals 10px. So whenever you read a value in REM in this article, just multiply it by 10 to get the corresponding value in pixels. </p>
+    <p>Sizing is mainly done thru REM's. Root font-size is set to 62.5%. All major browers have a default font-size setting of 16px. By setting it to 62.5% we basicly set font-size to 10px. This makes doing REM calculations really easy because <strong>1rem
+       equals 10px</strong>. So whenever you read a value in REM in this article, just multiply it by 10 to get the corresponding value in pixels. </p>
     <h2>Containers</h2>
     <p>
-      We have three sizes for containers: small, medium and large.
+      There are three sizes for containers: small, medium and large.
     </p>
     <table>
       <thead>
@@ -67,7 +67,7 @@
       </tr>
       <tr>
         <td>medium</td>
-        <td>55rem</td>
+        <td>75rem</td>
         <td><code>container-medium</code></td>
       </tr>
       <tr>
@@ -191,9 +191,10 @@ const randomIntRange = (min, max) => {
 
     <h2>Todo</h2>
     <ul>
-      <li><del>Rework all variables to be CSS variables for faster adjustments</del></li>
+      <li><del>Rework all variables to be CSS variables</del></li>
+      <li><del>Rename color names to be more declarative</del></li>
       <li>Add font-weights to variables</li>
-      <li>Use variables in table border declarations</li>
+      <li>Expand variables for border declarations</li>
       <li>Add styling for responsive image</li>
       <li>Add styling for lists, definition lists</li>
       <li>Contemplate if adding a grid is necessary, and if so in what form:
@@ -206,5 +207,4 @@ const randomIntRange = (min, max) => {
   </main>
   <script type="text/javascript" src="js/script.js"> </script>
 </body>
-
 </html>

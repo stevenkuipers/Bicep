@@ -2,9 +2,9 @@ form {
   margin-bottom: var(--margin-m);
 
   & > * {
-    margin-bottom: var(--margin-s);
+    margin-bottom: 1em;
   }
-  
+
   & label {
     display: block;
     margin-bottom: 1rem;
