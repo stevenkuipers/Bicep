@@ -40,14 +40,14 @@ $fonts: (
 );
 
 // Container Declarations
-$small: 55rem;
-$medium: 75rem;
-$large: 100rem;
+$container-small: 55rem;
+$container-medium: 75rem;
+$container-large: 100rem;
 
 $container-sizes: (
-  small: $small,
-  medium: $medium,
-  large: $large
+  container-small: $container-small,
+  container-medium: $container-medium,
+  container-large: $container-large
 );
 
 // Headings styling and font sizes
@@ -100,6 +100,6 @@ border-radius: $border-radius
 );
 
 // Breakpoints Declarations - Are not used anywhere yet
-// $mobile: $small;
-// $tablet: $medium;
-// $desktop: $large;
+// $mobile: $container-small;
+// $tablet: $container-medium;
+// $desktop: $container-large;

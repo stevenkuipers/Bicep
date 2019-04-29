@@ -103,7 +103,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-small {
+container-small {
   font-size: 80%; }
 
 /**
@@ -318,9 +318,9 @@ template {
   --font-size: 1.6rem;
   --font-primary: Montserrat, sans-serif;
   --font-secondary: Raleway, sans-serif;
-  --small: 55rem;
-  --medium: 75rem;
-  --large: 100rem;
+  --container-small: 55rem;
+  --container-medium: 75rem;
+  --container-large: 100rem;
   --heading-font-color: #223331;
   --heading-font-weight: 300;
   --heading-font-family: Raleway, sans-serif;
@@ -563,7 +563,7 @@ hr {
   margin-bottom: 4rem; }
 
 p, ol, ul, dl {
-  margin: 0 0 2rem 0; }
+  margin: 0 0 var(--margin-s) 0; }
 
 .container, .container-small, .container-medium, .container-large, .container-space-between {
   margin: auto;
@@ -571,14 +571,14 @@ p, ol, ul, dl {
 
 .container {
   overflow-x: auto;
-  margin-bottom: 4rem;
+  margin-bottom: var(--margin-m);
   padding: 0; }
   .container-small {
-    max-width: var(--small); }
+    max-width: var(--container-small); }
   .container-medium {
-    max-width: var(--medium); }
+    max-width: var(--container-medium); }
   .container-large {
-    max-width: var(--large); }
+    max-width: var(--container-large); }
   .container-space-between {
     padding: var(--padding-m);
     display: flex;
