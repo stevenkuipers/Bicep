@@ -1,5 +1,5 @@
 p, ol, ul, dl {
-  margin: 0 0 $margin-s 0;
+  margin: 0 0 var(--margin-s) 0;
 }
 
 %container {
@@ -10,19 +10,19 @@ p, ol, ul, dl {
 .container {
   overflow-x: auto;
   @extend %container;
-  margin-bottom: $margin-m;
+  margin-bottom: var(--margin-m);
   padding: 0;
 
   &-small {
-    max-width: var(--small);
+    max-width: var(--container-small);
     @extend %container;
   }
   &-medium {
-    max-width: var(--medium);
+    max-width: var(--container-medium);
     @extend %container;
   }
   &-large {
-    max-width: var(--large);
+    max-width: var(--container-large);
     @extend %container;
   }
 
