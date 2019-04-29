@@ -21,7 +21,7 @@
 
   &:hover, &:active {
     transition: all .3s ease-out;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-attention);
   }
 }
 
@@ -32,21 +32,21 @@
 
     &:hover {
       transition: all .3s ease-out;
-      background-color: var(--color-primary-dark);
+      background-color: var(--color-primary-attention);
       color: var(--color-accent1);
       text-decoration: none;
     }
   }
   &-muted, &-muted:visited {
-    background-color: var(--color-white);
-    color: var(--color-accent4);
+    background-color: var(--color-light);
+    color: var(--color-dark);
     border: 1px solid currentColor;
 
     &:hover {
       transition: all .3s ease-out;
-      border-color: var(--color-primary-dark);
-      background-color: var(--color-white);
-      color: var(--color-primary-dark);
+      border-color: var(--color-primary-attention);
+      background-color: var(--color-light);
+      color: var(--color-primary-attention);
     }
   }
 
