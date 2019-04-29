@@ -30,7 +30,7 @@ form {
     height: calc(var(--font-size) * 2.5);
     line-height: 1;
     font-weight: 300;
-    color: var(--color-accent4);
+    color: var(--color-dark);
   }
 
   & textarea {
@@ -40,7 +40,7 @@ form {
 
   & select, input::placeholder, textarea::placeholder {
     font-weight: 300;
-    color: var(--color-accent4);
+    color: var(--color-dark);
   }
 
   & > fieldset {

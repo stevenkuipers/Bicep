@@ -1,6 +1,6 @@
 %code {
   display: inline-block;
-  background-color: var(--color-accent4);
+  background-color: var(--color-dark);
 
   padding: 0 3px;
   border-radius: var(--border-radius);
@@ -19,7 +19,7 @@ kbd, samp {
 
 pre {
   display: block;
-  background-color: var(--color-accent4);
+  background-color: var(--color-dark);
   color: var(--color-primary);
   padding: var(--padding-m);
   border-radius: var(--border-radius);

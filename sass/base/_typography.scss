@@ -5,11 +5,11 @@ body {
   line-height: 1.2;
   font-weight: 200;
   font-family: var(--font-primary);
-  color: var(--color-accent4);
+  color: var(--color-dark);
 }
 
 ::selection {
-  color: var(--color-white);
+  color: var(--color-light);
   background-color: var(--color-primary);
 }
 
@@ -49,9 +49,9 @@ a:not(.button){
   transition: color .3s ease-out;
 
   &:hover {
-  color: darken($color-accent4, 5%);
+  color: darken($color-dark, 5%);
   }
   &:active {
-  color: $color-accent4;
+  color: $color-dark;
   }
 }

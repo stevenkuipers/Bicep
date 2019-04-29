@@ -1,28 +1,28 @@
-// $color-white : hsl(0,0,100%) !default;        // #FFFFFF
+// $color-light : hsl(0,0,100%) !default;        // #FFFFFF
 // $color-primary: hsl(168,64%,43%) !default;    // #28B498
-// $color-primary-dark: hsl(168,64%,38%) !default;
+// $color-primary-attention: hsl(168,64%,38%) !default;
 // $color-accent1: hsl(163, 26%, 95%) !default;  // #EEF5F3
 // $color-accent2: hsl(160, 18%, 90%) !default;  // #E1EAE7
-// $color-accent3: hsl(165, 3%, 55%) !default;   // #88908E
-// $color-accent4: hsl(173, 20%, 17%) !default;  // #223331
+// $color-alert: hsl(9,100%,63%) !default;   // #FF4747
+// $color-dark: hsl(173, 20%, 17%) !default;  // #223331
 
 // Color Declarations
-$color-white : #FFFFFF !default;
+$color-light : #FFFFFF !default;
 $color-primary: #28B498 !default;
-$color-primary-dark: darken(#28B498, 5%) !default;
+$color-primary-attention: darken(#28B498, 5%) !default;
 $color-accent1: #EEF5F3 !default;
 $color-accent2: #E1EAE7 !default;
-$color-accent3: #88908E !default;
-$color-accent4: #223331 !default;
+$color-alert: #FF6347 !default;
+$color-dark: #223331 !default;
 
 $colors: (
-  color-white : $color-white,
+  color-light : $color-light,
   color-primary: $color-primary,
-  color-primary-dark: $color-primary-dark,
+  color-primary-attention: $color-primary-attention,
   color-accent1: $color-accent1,
   color-accent2: $color-accent2,
-  color-accent3: $color-accent3,
-  color-accent4: $color-accent4
+  color-alert: $color-alert,
+  color-dark: $color-dark
 );
 
 // Font Declarations
@@ -51,7 +51,7 @@ $container-sizes: (
 );
 
 // Headings styling and font sizes
-$heading-font-color: $color-accent4;
+$heading-font-color: $color-dark;
 $heading-font-weight: 300;
 $heading-font-family: $font-secondary;
 $heading-line-height: 1.6;
