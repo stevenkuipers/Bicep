@@ -412,7 +412,7 @@ a:not(.button) {
     background-color: var(--color-primary-attention); }
 
 .button-inverted, .button-inverted:visited {
-  background-color: var(--color-accent1);
+  background-color: var(--color-light);
   color: var(--color-primary); }
   .button-inverted:hover, .button-inverted:visited:hover {
     transition: all .3s ease-out;
