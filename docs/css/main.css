@@ -566,8 +566,7 @@ p, ol, ul, dl {
   margin: 0 0 var(--margin-s) 0; }
 
 .container, .container-small, .container-medium, .container-large, .container-space-between {
-  margin: auto;
-  padding: var(--padding-m); }
+  margin: 0 auto var(--margin-l) auto; }
 
 .container {
   overflow-x: auto;

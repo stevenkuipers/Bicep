@@ -3,8 +3,7 @@ p, ol, ul, dl {
 }
 
 %container {
-  margin: auto;
-  padding: var(--padding-m);
+  margin: 0 auto var(--margin-l) auto;
 }
 
 .container {
