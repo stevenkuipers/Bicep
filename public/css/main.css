@@ -566,7 +566,8 @@ p, ol, ul, dl {
   margin: 0 0 var(--margin-s) 0; }
 
 .container, .container-small, .container-medium, .container-large, .container-space-between {
-  margin: 0 auto var(--margin-l) auto; }
+  padding: var(--padding-m);
+  margin: 0 auto; }
 
 .container {
   overflow-x: auto;
@@ -579,7 +580,6 @@ p, ol, ul, dl {
   .container-large {
     max-width: var(--container-large); }
   .container-space-between {
-    padding: var(--padding-m);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
