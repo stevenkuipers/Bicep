@@ -43,98 +43,132 @@
   <header class="header">
     <p>📷 - Photo by <a href="https://unsplash.com/@echaparro">Edgar Chaparro</a> on Unsplash</p>
   </header>
-  <main class="header-up container-large">
+  <main class="header-up container-medium">
     <h1>💪 Bicep - A CSS boilerplate</h1>
-    <!-- <h2>Another CSS boilerplate?</h2>
-    <p>Yup, I know there are others out there and I use and like a lot of them. I've used <a href="http://getskeleton.com">skeleton</a> and like the font choice ✨, <a href="https://getbootstrap.com">bootstrap</a> is great for bigger projects.</p> -->
-    <h2>Sizing</h2>
-    <p>Sizing is mainly done thru REM's. Root font-size is set to 62.5%. All major browers have a default font-size setting of 16px. By setting it to 62.5% we basicly set font-size to 10px. This makes doing REM calculations really easy because <strong>1rem
-       equals 10px</strong>. So whenever you read a value in REM in this article, just multiply it by 10 to get the corresponding value in pixels. </p>
-    <h2>Containers</h2>
-    <p>
-      There are three sizes for containers: small, medium and large.
-    </p>
-    <table>
-      <thead>
-        <th>Size</th>
-        <th>Value</th>
-        <th>CSS class</th>
-      </thead>
-      <tr>
-        <td>small</td>
-        <td>55rem</td>
-        <td><code>container-small</code></td>
-      </tr>
-      <tr>
-        <td>medium</td>
-        <td>75rem</td>
-        <td><code>container-medium</code></td>
-      </tr>
-      <tr>
-        <td>large</td>
-        <td>100rem</td>
-        <td><code>container-large</code></td>
-      </tr>
-    </table>
-    <h2>Typography</h2>
-    <p>As mentioned above, the font size is set on the <code>html</code> element, we also set font size on <code>body</code> to 1.6rem. All font sizing cascades from here.</p>
-    <p>All bottom margins are set to .5em, which translates to half the font size of the heading itself.</p>
     <div class="container">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
+      <h2>Quick start</h2>
+      <h3>Use CSS</h3>
+      <p>To use the <a href="https://raw.githubusercontent.com/stevenkuipers/Bicep/master/public/css/main.css">CSS file</a> as provided, add a link to it in the head of your HTML page.</p>
+      <h3>Use Sass</h3>
+      <ol>
+        <li>Clone the project</li>
+        <ul>
+          <li><code>git clone https://github.com/stevenkuipers/Bicep.git</code></li>
+        </ul>
+        <li>Install dependencies</li>
+        <ul>
+          <li><code>npm install</code></li>
+        </ul>
+        <li>Edit variables to your need</li>
+        <li>build css file</li>
+        <ul>
+          <li><code>npm run build-css</code></li>
+        </ul>
+      </ol>
     </div>
-    <h2>Color definitions</h2>
-    <div class="container-small color-examples-container">
-      <!-- Get color values from :root thru JS -->
+    <div class="container">
+      <h2>Sizing</h2>
+      <p>Sizing is mainly done thru REM's. Root font-size is set to 62.5%. All major browers have a default font-size setting of 16px. By setting it to 62.5% we basicly set font-size to 10px. This makes doing REM calculations really easy because
+        <strong>1rem
+          equals 10px</strong>. So whenever you read a value in REM in this article, just multiply it by 10 to get the corresponding value in pixels. </p>
+      <h2>Containers</h2>
+      <p>
+        There are three sizes for containers: small, medium and large.
+      </p>
+      <table>
+        <thead>
+          <th>Size</th>
+          <th>Value</th>
+          <th>CSS class</th>
+        </thead>
+        <tr>
+          <td>small</td>
+          <td>55rem</td>
+          <td><code>container-small</code></td>
+        </tr>
+        <tr>
+          <td>medium</td>
+          <td>75rem</td>
+          <td><code>container-medium</code></td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>100rem</td>
+          <td><code>container-large</code></td>
+        </tr>
+      </table>
+      <h2>Font size</h2>
+      <p>As mentioned above, the font size is set on the <code>html</code> element, we also set font size on <code>body</code> to 1.6rem. All font sizing cascades from here.</p>
+      <h2>Typography</h2>
+      <p>All bottom margins are set to .5em, which translates to half the font size of the heading itself.</p>
+      <div class="container">
+        <h1>Heading 1</h1>
+        <p>Some Sample text here</p>
+        <h2>Heading 2</h2>
+        <p>Some Sample text here</p>
+        <h3>Heading 3</h3>
+        <p>Some Sample text here</p>
+        <h4>Heading 4</h4>
+        <p>Some Sample text here</p>
+        <h5>Heading 5</h5>
+        <p>Some Sample text here</p>
+      </div>
     </div>
-    <h2>Buttons</h2>
-    <p>
-      <code>button</code> elements, <code>input</code>'s with submit and button types and <code>a.button</code> all render the same.
-    </p>
-    <p>
-      There are three different styles for buttons: regular, inverted and muted.
-    </p>
-    <p>
-      Buttons can also be full width.
-    </p>
-    <pre><xmp><button>Button</button>
+    <div class="container">
+      <h2>Color definitions</h2>
+      <div class="container-small color-examples-container">
+        <!-- Get color values from :root thru JS -->
+      </div>
+    </div>
+    <div class="container">
+      <h2>Buttons</h2>
+      <p>
+        <code>button</code> elements, <code>input</code>'s with submit and button types and <code>a.button</code> all render the same.
+      </p>
+      <p>
+        There are three different styles for buttons: regular, inverted and muted.
+      </p>
+      <p>
+        Buttons can also be full width.
+      </p>
+      <pre><xmp><button>Button</button>
 <input type="submit" value="Submit">
 <input type="button" value="Input">
 <a class="button">Link</a></xmp></pre>
 
-    <h4>Regular buttons</h4>
-    <div class="container-small container-space-between">
-      <button type="button" class="button" name="button">Submit</button>
-      <a href="#" class="button">Submit</a>
-      <input type="button" class="button" name="Go team" value="Go Bro">
-      <input type="submit" class="button" name="Go Bro" value="Geelel">
+      <h4>Regular buttons</h4>
+      <div class="container-small container-space-between">
+        <button type="button" class="button" name="button">Submit</button>
+        <a href="#" class="button">Submit</a>
+        <input type="button" class="button" name="Go team" value="Go Bro">
+        <input type="submit" class="button" name="Go Bro" value="Geelel">
+      </div>
+      <h4>inverted buttons</h4>
+      <div class="container-small container-space-between">
+        <button type="button" class="button button-inverted" name="button">Submit</button>
+        <a href="#" class="button-inverted button">Submit</a>
+        <input type="button" class="button button-inverted" name="Go team" value="Go Bro">
+        <input type="submit" class="button button-inverted" name="Go Bro" value="Geelel">
+      </div>
+      <h4>Muted buttons</h4>
+      <div class="container-small container-space-between">
+        <button type="button" class="button button-muted" name="button">Submit</button>
+        <a href="#" class="button-muted button">Submit</a>
+        <input type="button" class="button button-muted" name="Go team" value="Go Bro">
+        <input type="submit" class="button button-muted" name="Go Bro" value="Geelel">
+      </div>
+      <h4>Full width buttons</h4>
+      <div class="container-small container-space-between">
+        <button type="button" class="button button-full-w" name="button">Submit</button>
+        <button type="button" class="button button-inverted button-full-w" name="button">Submit</button>
+        <button type="button" class="button button-muted button-full-w" name="button">Submit</button>
+      </div>
     </div>
-    <h4>inverted buttons</h4>
-    <div class="container-small container-space-between">
-      <button type="button" class="button button-inverted" name="button">Submit</button>
-      <a href="#" class="button-inverted button">Submit</a>
-      <input type="button" class="button button-inverted" name="Go team" value="Go Bro">
-      <input type="submit" class="button button-inverted" name="Go Bro" value="Geelel">
-    </div>
-    <h4>Muted buttons</h4>
-    <div class="container-small container-space-between">
-      <button type="button" class="button button-muted" name="button">Submit</button>
-      <a href="#" class="button-muted button">Submit</a>
-      <input type="button" class="button button-muted" name="Go team" value="Go Bro">
-      <input type="submit" class="button button-muted" name="Go Bro" value="Geelel">
-    </div>
-    <h4>Full width buttons</h4>
-    <div class="container-small container-space-between">
-      <button type="button" class="button button-full-w" name="button">Submit</button>
-      <button type="button" class="button button-inverted button-full-w" name="button">Submit</button>
-      <button type="button" class="button button-muted button-full-w" name="button">Submit</button>
-    </div>
-    <h2 class="heading-2">Code</h2>
-    <p><code>code</code> is styled, to format a block of code wrap it in a <code>pre</code> element.</p>
-    <pre><code>const generateID = () => {
+
+    <div class="container">
+      <h2 class="heading-2">Code</h2>
+      <p><code>code</code> is styled, to format a block of code wrap it in a <code>pre</code> element.</p>
+      <pre><code>const generateID = () => {
   '_' + Math.random().toString(36).substr(2, 9)
 }
 
@@ -143,52 +177,58 @@ const randomIntRange = (min, max) => {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }</code></pre>
-    <h2>Forms</h2>
-    <form action="#">
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Email">
-      <label id="password" for="password">Password</label>
-      <input type="password" placeholder="Password">
-      <label for="name">Text Input</label>
-      <input type="text" name="name" id="name" placeholder="John Smith" />
-      <label for="select-choice">Select Dropdown Choice:</label>
-      <select name="select-choice" id="select-choice">
-        <option value="Choice 1">🍕 Pizza</option>
-        <option value="Choice 2">🍝 Pasta</option>
-        <option value="Choice 3">🥧 Pie</option>
-      </select>
-      <fieldset>
-        <legend>Radio Buttons </legend>
+    </div>
+    <div class="container">
+      <h2>Forms</h2>
+      <form action="#">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email">
+        <label id="password" for="password">Password</label>
+        <input type="password" placeholder="Password">
+        <label for="name">Text Input</label>
+        <input type="text" name="name" id="name" placeholder="John Smith" />
+        <label for="select-choice">Select Dropdown Choice:</label>
+        <select name="select-choice" id="select-choice">
+          <option value="Choice 1">🍕 Pizza</option>
+          <option value="Choice 2">🍝 Pasta</option>
+          <option value="Choice 3">🥧 Pie</option>
+        </select>
+        <fieldset>
+          <legend>Radio Buttons </legend>
+          <label>
+            <input type="radio" name="radio-choice-list" id="radio-choice-list-2" value="choice-list-2" />
+            Winnipeg
+          </label>
+          <label>
+            <input type="radio" name="radio-choice-list" id="radio-choice-list-2" value="choice-list-2" />
+            Stockholm
+          </label>
+          <label>
+            <input type="radio" name="radio-choice-list" id="radio-choice-list-3" value="choice-list-3" />
+            Addis ababa
+          </label>
+        </fieldset>
+        <label for="textarea">Textarea</label>
+        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
         <label>
-          <input type="radio" name="radio-choice-list" id="radio-choice-list-2" value="choice-list-2" />
-          Winnipeg
+          <input type="checkbox" name="checkbox">
+          Check me
         </label>
-        <label>
-          <input type="radio" name="radio-choice-list" id="radio-choice-list-2" value="choice-list-2" />
-          Stockholm
-        </label>
-        <label>
-          <input type="radio" name="radio-choice-list" id="radio-choice-list-3" value="choice-list-3" />
-          Addis ababa
-        </label>
-      </fieldset>
-      <label for="textarea">Textarea</label>
-      <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-      <label>
-        <input type="checkbox" name="checkbox">
-        Check me
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
-    <h2 class="heading-2">blockquote</h2>
-    <p>blockquote's are styled, citations are right-aligned.</p>
-    <div class="container-small">
-      <blockquote>
-        <p>I know kung fu.</p>
-        <cite>Neo</cite>
-      </blockquote>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="container">
+      <h2 class="heading-2">blockquote</h2>
+      <p>blockquote's are styled, citations are right-aligned.</p>
+      <div class="container-small">
+        <blockquote>
+          <p>I know kung fu.</p>
+          <cite>Neo</cite>
+        </blockquote>
+      </div>
     </div>
 
+    <hr>
     <h2>Todo</h2>
     <ul>
       <li><del>Rework all variables to be CSS variables</del></li>
@@ -207,4 +247,5 @@ const randomIntRange = (min, max) => {
   </main>
   <script type="text/javascript" src="js/script.js"> </script>
 </body>
+
 </html>

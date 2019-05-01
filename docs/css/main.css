@@ -455,7 +455,7 @@ table, .table {
   border-spacing: 0;
   width: 100%;
   max-width: 100%;
-  margin-bottom: var(--margin-m); }
+  margin-bottom: var(--margin-s); }
   table-alternate tbody tr:nth-child(odd), .table-alternate tbody tr:nth-child(odd) {
     background-color: var(--color-primary);
     color: var(--color-accent1); }
