@@ -308,13 +308,13 @@ template {
   display: none; }
 
 :root {
-  --color-light: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-primary: #28B498;
-  --color-primary-attention: #239f86;
+  --color-primary-dark: #239f86;
   --color-accent1: #EEF5F3;
   --color-accent2: #E1EAE7;
-  --color-alert: #FF6347;
-  --color-dark: #223331;
+  --color-accent3: #88908E;
+  --color-accent4: #223331;
   --font-size: 1.6rem;
   --font-primary: Montserrat, sans-serif;
   --font-secondary: Raleway, sans-serif;
@@ -345,10 +345,10 @@ body {
   line-height: 1.2;
   font-weight: 200;
   font-family: var(--font-primary);
-  color: var(--color-dark); }
+  color: var(--color-accent4); }
 
 ::selection {
-  color: var(--color-light);
+  color: var(--color-white);
   background-color: var(--color-primary); }
 
 .heading-1, h1, .heading-2, h2, .heading-3, h3, .heading-4, h4, .heading-5, h5 {
@@ -409,26 +409,26 @@ a:not(.button) {
   [type=button]:hover,
   [type=button]:active {
     transition: all .3s ease-out;
-    background-color: var(--color-primary-attention); }
+    background-color: var(--color-primary-dark); }
 
 .button-inverted, .button-inverted:visited {
-  background-color: var(--color-light);
+  background-color: var(--color-accent1);
   color: var(--color-primary); }
   .button-inverted:hover, .button-inverted:visited:hover {
     transition: all .3s ease-out;
-    background-color: var(--color-primary-attention);
+    background-color: var(--color-primary-dark);
     color: var(--color-accent1);
     text-decoration: none; }
 
 .button-muted, .button-muted:visited {
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-white);
+  color: var(--color-accent4);
   border: 1px solid currentColor; }
   .button-muted:hover, .button-muted:visited:hover {
     transition: all .3s ease-out;
-    border-color: var(--color-primary-attention);
-    background-color: var(--color-light);
-    color: var(--color-primary-attention); }
+    border-color: var(--color-primary-dark);
+    background-color: var(--color-white);
+    color: var(--color-primary-dark); }
 
 .button-full-w {
   display: block;
@@ -455,7 +455,7 @@ table, .table {
   border-spacing: 0;
   width: 100%;
   max-width: 100%;
-  margin-bottom: var(--margin-s); }
+  margin-bottom: var(--margin-m); }
   table-alternate tbody tr:nth-child(odd), .table-alternate tbody tr:nth-child(odd) {
     background-color: var(--color-primary);
     color: var(--color-accent1); }
@@ -485,7 +485,7 @@ td {
 
 code, xmp, kbd, samp {
   display: inline-block;
-  background-color: var(--color-dark);
+  background-color: var(--color-accent4);
   padding: 0 3px;
   border-radius: var(--border-radius); }
 
@@ -498,7 +498,7 @@ kbd, samp {
 
 pre {
   display: block;
-  background-color: var(--color-dark);
+  background-color: var(--color-accent4);
   color: var(--color-primary);
   padding: var(--padding-m);
   border-radius: var(--border-radius);
@@ -511,7 +511,7 @@ pre {
 form {
   margin-bottom: var(--margin-m); }
   form > * {
-    margin-bottom: 1em; }
+    margin-bottom: var(--margin-s); }
   form label {
     display: block;
     margin-bottom: 1rem;
@@ -533,13 +533,13 @@ form {
     height: calc(var(--font-size) * 2.5);
     line-height: 1;
     font-weight: 300;
-    color: var(--color-dark); }
+    color: var(--color-accent4); }
   form textarea {
     padding-top: var(--padding-s);
     height: unset; }
   form select, form input::placeholder, form textarea::placeholder {
     font-weight: 300;
-    color: var(--color-dark); }
+    color: var(--color-accent4); }
   form > fieldset {
     margin: 0 0 var(--margin-s) 0; }
 
@@ -566,8 +566,8 @@ p, ol, ul, dl {
   margin: 0 0 var(--margin-s) 0; }
 
 .container, .container-small, .container-medium, .container-large, .container-space-between {
-  padding: var(--padding-m);
-  margin: 0 auto; }
+  margin: auto;
+  padding: var(--padding-m); }
 
 .container {
   overflow-x: auto;
@@ -580,6 +580,7 @@ p, ol, ul, dl {
   .container-large {
     max-width: var(--container-large); }
   .container-space-between {
+    padding: var(--padding-m);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
