@@ -40,9 +40,9 @@ $fonts: (
 );
 
 // Container Declarations
-$container-small: 55rem;
-$container-medium: 75rem;
-$container-large: 100rem;
+$container-small: 750px;
+$container-medium: 1000px;
+$container-large: 1200px;
 
 $container-sizes: (
   container-small: $container-small,
@@ -80,6 +80,7 @@ $padding-l: 2.4rem;
 $margin-s: 2rem;
 $margin-m: 4rem;
 $margin-l: 8rem;
+$margin-xl: 12rem;
 
 $spacings: (
   padding-s: $padding-s,
@@ -87,7 +88,8 @@ $spacings: (
   padding-l: $padding-l,
   margin-s: $margin-s,
   margin-m: $margin-m,
-  margin-l: $margin-l
+  margin-l: $margin-l,
+  margin-xl: $margin-xl
 );
 
 // Border Declarations

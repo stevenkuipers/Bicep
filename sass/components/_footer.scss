@@ -1,0 +1,26 @@
+.footer {
+  background: var(--color-accent1);
+  padding: var(--margin-s);
+  margin: 0;
+
+  &.row {
+    margin-bottom: 0;
+  }
+}
+
+  @media screen and (min-width: $container-small) {
+    .footer {
+      padding: var(--margin-m);
+    }
+}
+  @media screen and (min-width: $container-medium) {
+    .footer {
+      padding: var(--margin-m) var(--margin-l);
+    }
+}
+
+  @media only screen and (min-width: $container-large) {
+    .footer {
+      padding: var(--margin-m) var(--margin-xl);
+    }
+  }
