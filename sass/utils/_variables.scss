@@ -40,11 +40,13 @@ $fonts: (
 );
 
 // Container Declarations
+$container-extra-small: 550px;
 $container-small: 750px;
 $container-medium: 1000px;
 $container-large: 1200px;
 
 $container-sizes: (
+  container-extra-small: $container-extra-small,
   container-small: $container-small,
   container-medium: $container-medium,
   container-large: $container-large
@@ -100,8 +102,3 @@ $borders: (
 border: $border,
 border-radius: $border-radius
 );
-
-// Breakpoints Declarations - Are not used anywhere yet
-// $mobile: $container-small;
-// $tablet: $container-medium;
-// $desktop: $container-large;
