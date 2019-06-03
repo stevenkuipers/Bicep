@@ -30,11 +30,13 @@ $colors: (
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
 
 $font-size: 1.6rem;
+$font-weight: 200;
 $font-primary: 'Montserrat', sans-serif;
 $font-secondary: 'Raleway', sans-serif;
 
 $fonts: (
   font-size: $font-size,
+  font-weight: $font-weight,
   font-primary: $font-primary,
   font-secondary: $font-secondary
 );

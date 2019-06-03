@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-size: var(--font-size);
   line-height: 1.2;
-  font-weight: 200;
+  font-weight: var(--font-weight);
   font-family: var(--font-primary);
   color: var(--color-dark);
 }
