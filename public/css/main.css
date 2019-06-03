@@ -604,18 +604,6 @@ p, ol, ul, dl {
   .container {
     margin: 0 var(--margin-xl); } }
 
-.max-width-small {
-  max-width: var(--container-small);
-  justify-self: center; }
-
-.max-width-medium {
-  max-width: var(--container-medium);
-  justify-self: center; }
-
-.max-width-large {
-  max-width: var(--container-large);
-  justify-self: center; }
-
 .space-evenly {
   display: flex;
   justify-content: space-evenly;
