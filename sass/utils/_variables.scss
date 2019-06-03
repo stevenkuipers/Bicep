@@ -40,11 +40,13 @@ $fonts: (
 );
 
 // Container Declarations
-$container-small: 55rem;
-$container-medium: 75rem;
-$container-large: 100rem;
+$container-extra-small: 550px;
+$container-small: 750px;
+$container-medium: 1000px;
+$container-large: 1200px;
 
 $container-sizes: (
+  container-extra-small: $container-extra-small,
   container-small: $container-small,
   container-medium: $container-medium,
   container-large: $container-large
@@ -80,6 +82,7 @@ $padding-l: 2.4rem;
 $margin-s: 2rem;
 $margin-m: 4rem;
 $margin-l: 8rem;
+$margin-xl: 12rem;
 
 $spacings: (
   padding-s: $padding-s,
@@ -87,7 +90,8 @@ $spacings: (
   padding-l: $padding-l,
   margin-s: $margin-s,
   margin-m: $margin-m,
-  margin-l: $margin-l
+  margin-l: $margin-l,
+  margin-xl: $margin-xl
 );
 
 // Border Declarations
@@ -98,8 +102,3 @@ $borders: (
 border: $border,
 border-radius: $border-radius
 );
-
-// Breakpoints Declarations - Are not used anywhere yet
-// $mobile: $container-small;
-// $tablet: $container-medium;
-// $desktop: $container-large;

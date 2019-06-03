@@ -2,35 +2,128 @@ p, ol, ul, dl {
   margin: 0 0 var(--margin-s) 0;
 }
 
-%container {
-  padding: var(--padding-m);
-  margin: 0 auto;
-}
-
 .container {
   overflow-x: auto;
-  @extend %container;
+  padding: var(--padding-m);
+  margin: 0 var(--margin-s);
+}
+
+  @media screen and (min-width: $container-small) {
+    .container {
+      margin: 0 var(--margin-m);
+    }
+}
+  @media screen and (min-width: $container-medium) {
+    .container {
+      margin: 0 var(--margin-l);
+    }
+}
+
+  @media only screen and (min-width: $container-large) {
+    .container {
+      margin: 0 var(--margin-xl);
+    }
+  }
+
+// Sizing helpers
+.max-width-small {
+  max-width: var(--container-small);
+  justify-self: center;
+}
+.max-width-medium {
+  max-width: var(--container-medium);
+  justify-self: center;
+}
+.max-width-large {
+  max-width: var(--container-large);
+  justify-self: center;
+}
+
+
+// Flex-helpers
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// Grid Breakpoints
+
+.row {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
   margin-bottom: var(--margin-m);
-  padding: 0;
+}
 
-  &-small {
-    max-width: var(--container-small);
-    @extend %container;
-  }
-  &-medium {
-    max-width: var(--container-medium);
-    @extend %container;
-  }
-  &-large {
-    max-width: var(--container-large);
-    @extend %container;
-  }
+.row > * {
+  grid-column: span 12;
+}
 
-  &-space-between {
-    @extend %container;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+// xs declarations
+@for $i from 1 through 12 {
+  .col-xs-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+// xs center
+$step : 12;
+@for $i from 2 through 6 {
+  $step : $step - 2;
+  .col-xs-#{$step}-center {
+    grid-column: $i / span #{$step};
+  }
+}
+
+@media (min-width: $container-small) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+  $step : 12;
+  @for $i from 2 through 6 {
+    $step : $step - 2;
+    .col-sm-#{$step}-center {
+      grid-column: $i / span #{$step};
+    }
+  }
+}
+
+@media (min-width: $container-medium) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+  $step : 12;
+  @for $i from 2 through 6 {
+    $step : $step - 2;
+    .col-md-#{$step}-center {
+      grid-column: $i / span #{$step};
+    }
+  }
+}
+
+@media (min-width: $container-large) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+  $step : 12;
+  @for $i from 2 through 6 {
+    $step : $step - 2;
+    .col-lg-#{$step}-center {
+      grid-column: $i / span #{$step};
+    }
   }
 }
