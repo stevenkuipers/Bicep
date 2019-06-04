@@ -565,6 +565,10 @@ hr {
   height: 0;
   margin-bottom: 4rem; }
 
+.image {
+  max-width: 100%;
+  height: auto; }
+
 .footer {
   background: var(--color-accent1);
   padding: var(--margin-s);
@@ -613,6 +617,18 @@ p, ol, ul, dl {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+
+.align-start {
+  display: grid;
+  align-items: start; }
+
+.align-center {
+  display: grid;
+  align-items: center; }
+
+.align-end {
+  display: grid;
+  align-items: end; }
 
 .row {
   display: grid;
