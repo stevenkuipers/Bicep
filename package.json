@@ -4,7 +4,7 @@
   "description": "A scaffold for a quick CSS framework setup",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {},
   "scripts": {
